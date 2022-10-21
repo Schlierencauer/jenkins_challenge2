@@ -7,7 +7,7 @@ pipeline{
                 sh "./algorithm.sh > report.txt"
                 
                 archiveArtifacts allowEmptyArchive: true, 
-                artifacts: '', 
+                artifacts: '*.txt', 
                 fingerprint: true, 
                 followSymlinks: false, 
                 onlyIfSuccessful: true
